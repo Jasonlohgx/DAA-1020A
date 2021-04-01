@@ -2,7 +2,7 @@ from flask import Flask,request,Response
 from botbuilder.core import BotFrameworkAdapter,BotFrameworkAdapterSettings,TurnContext,ConversationState,MemoryStorage
 from botbuilder.schema import Activity
 import asyncio
-from hero_card import SampleAnimationCard
+from hero_card import SampleAnimationCard   
 
 
 app = Flask(__name__)
@@ -36,4 +36,4 @@ def messages():
 
 
 if __name__ == '__main__':
-    app.run('localhost',3978)
+    app.run('https://lgx1020a.azurewebsites.net',3978)
